@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-sudo apt-get install -y wget openssl python-pip
+sudo apt-get install -y wget openssl python3-pip
 mkdir ~/.ssh
 openssl ecparam -genkey -name prime256v1 -noout -out ~/.ssh/ec_private.pem
 openssl ec -in ~/.ssh/ec_private.pem -pubout -out ~/.ssh/ec_public.pem
